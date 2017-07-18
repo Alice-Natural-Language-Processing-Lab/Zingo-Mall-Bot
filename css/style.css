@@ -1,0 +1,104 @@
+html{
+  overflow:hidden;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+}
+
+.box{
+  margin: auto; 
+  position:relative;
+  width:22vw;
+  height:64vh;
+  text-align:center;
+  color: #2b2b2b;
+  font-family: 'Titillium Web', sans-serif;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+  
+}
+.box h3{
+  font-size: 1.6vw
+}
+.wrap{
+    position:relative;
+    top:20px;
+    margin:auto;
+    width:18.3vw;
+    height:44vh;
+    overflow:hidden;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    cursor:pointer;
+
+}
+img{
+  width:18.3vw;
+  height:44vh;
+  transition: all .3s ease-in-out;
+}
+.wrap:hover img{
+  filter: grayscale(100%) blur(8px);
+  transform: rotate(360deg);
+}
+span{
+  display:block;
+  margin-top:2.3vw;
+  font-size:2.3vw;
+}
+ .wrap p{
+  position:absolute;
+  color:#2b2b2b;
+  top:110px;
+  right:0;
+  left:0;
+  opacity:0;
+  font-size:24px;
+  transition: all 0.3s linear;
+}
+.wrap:hover p{
+  opacity:1;
+}
+.popup{
+  color:#fff;
+  text-align: center;
+  position:fixed;
+  top:120px;
+  left: 2%;
+  width:90%;
+  height:22vh;
+  padding:40px;
+  font-family: 'Ubuntu', sans-serif;
+  background:#2b2b2b;
+  display:none;
+  z-index:9999;
+  transform:scale(100);
+  transition: transform 1s;
+  opacity: 0.9;
+  }
+
+.popup h1{  
+  font-size: 2.5vw;
+
+}
+.popup p{
+  font-size: 1.2vmax;
+}
+button{
+  float:right;
+}
+.close{
+  position: fixed;
+  right: 0;
+  top:0;
+  background: transparent;
+  color: #fff;
+  border:none;
+  cursor: pointer;
+}  
+  
+.night{
+  height:99999px;
+  overflow-y: hidden;
+  background:rgba(0,0,0,0.7);
+} 
